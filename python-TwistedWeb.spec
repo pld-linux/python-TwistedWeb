@@ -4,7 +4,7 @@ Summary:	Web library for Twisted
 Summary(pl):	Biblioteka Web dla Twisted
 Name:		python-%{module}
 Version:	0.5.0
-Release:	0.1
+Release:	0.2
 License:	MIT
 Group:		Libraries/Python
 Source0:	http://tmrc.mit.edu/mirror/twisted/Web/0.5/%{module}-%{version}.tar.bz2
@@ -36,10 +36,13 @@ python setup.py install \
 
 find $RPM_BUILD_ROOT%{py_sitescriptdir} -name \*.py -exec rm {} \;
 
+install -d $RPM_BUILD_ROOT%{py_sitedir}
+mv -f $RPM_BUILD_ROOT%{py_sitescriptdir}/* $RPM_BUILD_ROOT%{py_sitedir}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
 %doc LICENSE NEWS README
-%{py_sitescriptdir}/twisted/web
+%{py_sitedir}/twisted/web
