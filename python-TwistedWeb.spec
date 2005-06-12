@@ -15,9 +15,14 @@ Requires:	python-Twisted >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Twisted Web is a web application server written in pure Python, with 
-APIs at multiple levels of abstraction to facilitate different kinds 
+Twisted Web is a web application server written in pure Python, with
+APIs at multiple levels of abstraction to facilitate different kinds
 of web programming.
+
+%description -l pl
+Twisted Web to serwer aplikacji WWW napisany w czystym Pythonie z API
+o wielu poziomach abstrakcji, maj±cych u³atwiæ ró¿ne rodzaje
+programowania WWW.
 
 %prep
 %setup -q -n %{module}-%{version}
