@@ -12,6 +12,7 @@ Source0:	http://tmrc.mit.edu/mirror/twisted/Web/0.5/%{module}-%{version}.tar.bz2
 URL:		http://twistedmatrix.com/projects/web/
 BuildRequires:	python-devel >= 2.2
 BuildRequires:	ZopeInterface
+BuildRequires:	python-Twisted >= 2.0
 Requires:	python-Twisted >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
