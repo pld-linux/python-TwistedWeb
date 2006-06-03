@@ -14,6 +14,7 @@ BuildRequires:	python-devel >= 2.2
 BuildRequires:	ZopeInterface
 BuildRequires:	python-Twisted >= 2.0
 Requires:	python-Twisted >= 2.0
+Obsoletes:	python-Twisted-web
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
