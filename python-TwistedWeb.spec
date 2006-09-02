@@ -12,9 +12,9 @@ Group:		Libraries/Python
 Source0:	http://tmrc.mit.edu/mirror/twisted/Web/%{major}/%{module}-%{version}.tar.bz2
 # Source0-md5:	a681931d2eb747ca871ef71d8d1f5ff1
 URL:		http://twistedmatrix.com/projects/web/
-BuildRequires:	python-devel >= 2.2
 BuildRequires:	ZopeInterface
 BuildRequires:	python-TwistedCore >= 2.4.0
+BuildRequires:	python-devel >= 2.2
 Requires:	python-TwistedCore >= 2.4.0
 Obsoletes:	python-Twisted-web
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -73,7 +73,7 @@ python setup.py install \
 %py_postclean
 
 install doc/man/*.1 $RPM_BUILD_ROOT%{_mandir}/man1
-cp -ar doc/examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a doc/examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
