@@ -3,7 +3,7 @@
 %define		minor	0
 
 Summary:	Web library for Twisted
-Summary(pl):	Biblioteka Web dla Twisted
+Summary(pl.UTF-8):   Biblioteka Web dla Twisted
 Name:		python-%{module}
 Version:	%{major}.%{minor}
 Release:	1
@@ -24,34 +24,34 @@ Twisted Web is a web application server written in pure Python, with
 APIs at multiple levels of abstraction to facilitate different kinds
 of web programming.
 
-%description -l pl
+%description -l pl.UTF-8
 Twisted Web to serwer aplikacji WWW napisany w czystym Pythonie z API
-o wielu poziomach abstrakcji, maj±cych u³atwiæ ró¿ne rodzaje
+o wielu poziomach abstrakcji, majÄ…cych uÅ‚atwiÄ‡ rÃ³Å¼ne rodzaje
 programowania WWW.
 
 %package doc
 Summary:	Documentation for TwistedWeb
-Summary(pl):	Dokumentacja do TwistedWeb
+Summary(pl.UTF-8):   Dokumentacja do TwistedWeb
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
 %description doc
 Offline documentation for TwistedWeb.
 
-%description doc -l pl
+%description doc -l pl.UTF-8
 Dokumentacja offline do TwistedWeb.
 
 %package examples
 Summary:	Example programs for TwistedWeb
-Summary(pl):	Programy przyk³adowe do TwistedWeb
+Summary(pl.UTF-8):   Programy przykÅ‚adowe do TwistedWeb
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
 %description examples
 This package contains example programs for TwistedWeb.
 
-%description examples -l pl
-Ten pakiet zawiera przyk³adowe programy dla TwistedWeb.
+%description examples -l pl.UTF-8
+Ten pakiet zawiera przykÅ‚adowe programy dla TwistedWeb.
 
 %prep
 %setup -q -n %{module}-%{version}
