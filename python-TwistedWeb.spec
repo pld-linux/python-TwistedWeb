@@ -3,7 +3,7 @@
 %define		minor	0
 
 Summary:	Web library for Twisted
-Summary(pl.UTF-8):   Biblioteka Web dla Twisted
+Summary(pl.UTF-8):	Biblioteka Web dla Twisted
 Name:		python-%{module}
 Version:	%{major}.%{minor}
 Release:	1
@@ -31,7 +31,7 @@ programowania WWW.
 
 %package doc
 Summary:	Documentation for TwistedWeb
-Summary(pl.UTF-8):   Dokumentacja do TwistedWeb
+Summary(pl.UTF-8):	Dokumentacja do TwistedWeb
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
@@ -43,7 +43,7 @@ Dokumentacja offline do TwistedWeb.
 
 %package examples
 Summary:	Example programs for TwistedWeb
-Summary(pl.UTF-8):   Programy przykładowe do TwistedWeb
+Summary(pl.UTF-8):	Programy przykładowe do TwistedWeb
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
