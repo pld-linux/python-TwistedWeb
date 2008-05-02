@@ -1,5 +1,5 @@
 %define 	module	TwistedWeb
-%define		major	0.7
+%define		major	8.0
 %define		minor	0
 
 Summary:	Web library for Twisted
@@ -10,7 +10,7 @@ Release:	1
 License:	MIT
 Group:		Libraries/Python
 Source0:	http://tmrc.mit.edu/mirror/twisted/Web/%{major}/%{module}-%{version}.tar.bz2
-# Source0-md5:	de55ee18f843bcc6372d34eb88a27c21
+# Source0-md5:	f13d39085503ac5cb7edc2c4a0012d52
 URL:		http://twistedmatrix.com/projects/web/
 BuildRequires:	ZopeInterface
 BuildRequires:	python-TwistedCore >= 2.4.0
@@ -80,6 +80,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc LICENSE NEWS README
+%{py_sitedir}/*.egg-info
 %{py_sitedir}/twisted/web
 %{py_sitedir}/twisted/plugins/*
 
