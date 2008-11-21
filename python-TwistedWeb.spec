@@ -14,7 +14,8 @@ Source0:	http://tmrc.mit.edu/mirror/twisted/Web/%{major}/%{module}-%{version}.ta
 URL:		http://twistedmatrix.com/trac/wiki/TwistedWeb
 BuildRequires:	ZopeInterface
 BuildRequires:	python-TwistedCore >= 2.4.0
-BuildRequires:	python-devel >= 2.2
+BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	rpm-pythonprov
 Requires:	python-TwistedCore >= 2.4.0
 Obsoletes:	python-Twisted-web
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
