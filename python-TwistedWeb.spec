@@ -6,7 +6,7 @@ Summary:	Web library for Twisted
 Summary(pl.UTF-8):	Biblioteka Web dla Twisted
 Name:		python-%{module}
 Version:	%{major}.%{minor}
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries/Python
 Source0:	http://twistedmatrix.com/Releases/Web/%{major}/%{module}-%{version}.tar.bz2
