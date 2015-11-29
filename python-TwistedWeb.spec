@@ -12,6 +12,7 @@ Group:		Libraries/Python
 Source0:	http://twistedmatrix.com/Releases/Web/%{major}/%{module}-%{version}.tar.bz2
 # Source0-md5:	2c95ae74a850cf3db078d52d97939fc1
 URL:		http://twistedmatrix.com/trac/wiki/TwistedWeb
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	ZopeInterface
 BuildRequires:	python-TwistedCore >= 13.0.0
 BuildRequires:	python-devel >= 1:2.5
